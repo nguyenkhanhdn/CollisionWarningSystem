@@ -9,6 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="FireSharp.Serialization.JsonNet" Version="1.1.0" />
     <PackageReference Include="lobe" Version="1.0.35" />
     <PackageReference Include="lobe.ImageSharp" Version="1.0.35" />
     <PackageReference Include="lobe.Onnx" Version="1.0.35" />
