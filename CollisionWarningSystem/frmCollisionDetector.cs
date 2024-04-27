@@ -83,39 +83,39 @@ namespace CollisionWarningSystem
 
         private async void label1_Click(object sender, EventArgs e)
         {
-            //IFirebaseClient client = new FirebaseClient(config);
-            if (client != null)
-            {
-                MessageBox.Show("Connection is established.");
-            }
-            var data = new Data
-            {
-                ComputerUseTime = "120",
-                KeywordFilter = "1",
-                ProhibitInternetUse = "1",
-                SoftwareProhibit = "1"
-            };
-            SetResponse response = await client.SetTaskAsync<Data>("ParentalControl", data);
-            Data result = response.ResultAs<Data>();
-            if (result != null)
-            {
-                MessageBox.Show(result.KeywordFilter + "-" + result.ProhibitInternetUse + "-" + result.ComputerUseTime);
-            }
+            ////IFirebaseClient client = new FirebaseClient(config);
+            //if (client != null)
+            //{
+            //    MessageBox.Show("Connection is established.");
+            //}
+            //var data = new Data
+            //{
+            //    ComputerUseTime = "120",
+            //    KeywordFilter = "1",
+            //    ProhibitInternetUse = "1",
+            //    SoftwareProhibit = "1"
+            //};
+            //SetResponse response = await client.SetTaskAsync<Data>("ParentalControl", data);
+            //Data result = response.ResultAs<Data>();
+            //if (result != null)
+            //{
+            //    MessageBox.Show(result.KeywordFilter + "-" + result.ProhibitInternetUse + "-" + result.ComputerUseTime);
+            //}
         }
 
         private async void label2_Click(object sender, EventArgs e)
         {
-            if (client != null)
-            {
-                MessageBox.Show("Connection is established.");
-            }
+            //if (client != null)
+            //{
+            //    MessageBox.Show("Connection is established.");
+            //}
            
-            FirebaseResponse response = await client.GetTaskAsync("ParentalControl/");
-            Data result = response.ResultAs<Data>();
-            if (result != null)
-            {
-                MessageBox.Show(result.KeywordFilter + "-" + result.ProhibitInternetUse + "-" + result.ComputerUseTime);
-            }
+            //FirebaseResponse response = await client.GetTaskAsync("ParentalControl/");
+            //Data result = response.ResultAs<Data>();
+            //if (result != null)
+            //{
+            //    MessageBox.Show(result.KeywordFilter + "-" + result.ProhibitInternetUse + "-" + result.ComputerUseTime);
+            //}
         }
     }
 }
