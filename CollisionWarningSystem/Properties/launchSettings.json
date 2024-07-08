@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "CollisionWarningSystem": {
+      "commandName": "Project",
+      "nativeDebugging": true
+    }
+  }
+}
